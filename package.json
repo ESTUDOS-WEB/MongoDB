@@ -1,0 +1,25 @@
+{
+  "name": "mongodb",
+  "version": "0.0.0",
+  "description": "Introdução ao mongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ESTUDOS-WEB/MongoDB.git"
+  },
+  "author": {
+    "name": "Fábio Júnior Barbosa",
+    "email": "fjb.desenv@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ESTUDOS-WEB/MongoDB/issues"
+  },
+  "homepage": "https://github.com/ESTUDOS-WEB/MongoDB#readme",
+  "dependencies": {
+    "mongodb": "^6.1.0"
+  }
+}
