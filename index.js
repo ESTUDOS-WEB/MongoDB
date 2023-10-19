@@ -1,3 +1,4 @@
 import { ControllerExemplo } from "./controllers/exemplo";
 
-//ControllerExemplo.criarCollection();
+// ControllerExemplo.collection.criar("minha_nova_colecao");
+// ControllerExemplo.collection.deletar("minha_nova_colecao");
