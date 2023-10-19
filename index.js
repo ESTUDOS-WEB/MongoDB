@@ -3,15 +3,18 @@ import { conectar, desconectar } from "./utils/dataBase";
 
 conectar()
   .then(async (conexao) => {
-    //await ControllerExemplo.collection.criar(conexao, "minha_nova_colecao");
-    //await ControllerExemplo.collection.deletar(conexao, "minha_nova_colecao");
-    
-    await ControllerExemplo.crud.inserir(conexao, "minha_nova_colecao", {
-      codigo: 2,
-      descricao: "Produto 2",
-      quantidade: 0,
-      valorUnitario: 10,
-    });
+    const collection = "minha_nova_colecao";
+    //await ControllerExemplo.collection.criar(conexao, collection);
+    //await ControllerExemplo.collection.deletar(conexao, collection);
+
+    // await ControllerExemplo.crud.inserir(conexao, collection, {
+    //   codigo: 2,
+    //   descricao: "Produto 2",
+    //   quantidade: 0,
+    //   valorUnitario: 10,
+    // });
+
+    //await ControllerExemplo.crud.consultarTodos(conexao, collection);
 
     desconectar(conexao.conexao);
   })
