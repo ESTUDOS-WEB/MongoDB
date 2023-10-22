@@ -16,7 +16,8 @@ conectar()
 
     //await ControllerExemplo.crud.consultarTodos(conexao, collection);
     //await ControllerExemplo.crud.consultarUm(conexao, collection, 3);
-    await ControllerExemplo.crud.deletarUm(conexao, collection, 2);
+    //await ControllerExemplo.crud.deletarUm(conexao, collection, 2);
+    await ControllerExemplo.crud.atualizar(conexao, collection, 3, { $set: { valorUnitario: 24, teste: "teste" } });
 
     desconectar(conexao.conexao);
   })
