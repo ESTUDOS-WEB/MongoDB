@@ -90,6 +90,25 @@ const ControllerExemplo = {
         console.error(error.message);
       }
     },
+
+    async deletarUm(conexao, nomeCollection, codigo) {
+      try {
+        if (!conexao) throw new Error("Necessario informar conexão.");
+        if (!nomeCollection)
+          throw new Error("Necessario informar nome para coleção.");
+          if (!codigo)
+          throw new Error("Necessario informar o código.");
+
+        // Executa a operação
+        const registros =  await conexao.banco.collection(nomeCollection).findOneAndDelete({codigo});
+
+        // Mensagem confirmando execução da operação
+        registros ? console.log("Deletado!") : console.log("Registro não encontrado.");
+      } catch (error) {
+        // Erro ao tentar executar a operação
+        console.error(error.message);
+      }
+    },
   },
 };
 
