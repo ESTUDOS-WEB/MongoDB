@@ -8,13 +8,15 @@ conectar()
     //await ControllerExemplo.collection.deletar(conexao, collection);
 
     // await ControllerExemplo.crud.inserir(conexao, collection, {
-    //   codigo: 2,
-    //   descricao: "Produto 2",
+    //   codigo: 1,
+    //   descricao: "Produto 1",
     //   quantidade: 0,
-    //   valorUnitario: 10,
+    //   valorUnitario: 139.90,
     // });
 
     //await ControllerExemplo.crud.consultarTodos(conexao, collection);
+    //await ControllerExemplo.crud.consultarUm(conexao, collection, 3);
+    await ControllerExemplo.crud.deletarUm(conexao, collection, 2);
 
     desconectar(conexao.conexao);
   })
