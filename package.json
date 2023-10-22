@@ -1,6 +1,6 @@
 {
   "name": "mongodb",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "description": "Introdução ao mongoDB",
   "main": "index.js",
   "scripts": {
